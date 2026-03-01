@@ -1,0 +1,31 @@
+CAPI=2:
+name: craigjb:qmvu13p:blinky:0.1.0
+description: Blinky test
+
+filesets:
+  xdc:
+    files:
+      - data/qmvu13p.xdc
+    file_type: xdc
+
+  dep:
+    depend:
+      - craigjb:spiny:generators:0.1.0
+
+generate:
+  spinalhdl:
+    generator: spinalhdl
+    parameters:
+      main: qmvu13p.blinky.TopLevelVerilog
+      output_path: "target/spinal/Blinky.v"
+      file_type: verilogSource
+
+targets:
+  default:
+    filesets: [xdc, dep]
+    generate:
+      - spinalhdl
+    toplevel: Blinky
+    flow: vivado
+    flow_options:
+      part: xcvu13p-fhga2104-2-e
