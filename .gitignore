@@ -56,3 +56,5 @@ tmp/
 null
 *.bin
 *.out
+
+.DS_Store
