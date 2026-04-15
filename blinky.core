@@ -1,11 +1,13 @@
 CAPI=2:
-name: craigjb:qmvu13p:blinky:0.1.0
+name: craigjb:qmvu13p:blinky:0
 description: Blinky test
 
 filesets:
   xdc:
     files:
       - data/qmvu13p.xdc
+      - data/ddr_pins.xdc
+      - data/io_pins.xdc
     file_type: xdc
 
   dep:
