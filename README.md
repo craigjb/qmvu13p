@@ -1,6 +1,8 @@
 # QMVU13P
 Reverse engineering notes (and blinky) for a Quantum Machines Xilinx Virtex Ultrascale+ board with an XCVU13P on it.
 
+There appear to be multiple revisions of this board, so please be careful! Use these pin-outs with caution, as they may have changed between revisions.
+
 (Notes below the pictures)
 
 **Top**
